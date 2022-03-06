@@ -1,0 +1,97 @@
+$bg-color: #2c353a;
+$btn-bg: #f59440;
+$btn-hover-bg: #3072ac;
+$btn-text-color: #ffffff;
+$text-color: #8497a2;
+$border-color: #2678c9;
+$transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+
+.Header {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  height: 80px;
+
+  background-color: $bg-color;
+  color: $text-color;
+  border-bottom: 5px solid $border-color;
+}
+.LogoWrap {
+  background: linear-gradient(to right, $border-color 50%, transparent 50%);
+  padding: 0 15px;
+}
+
+.Logo {
+  height: 80px;
+}
+
+.BtnRental {
+  display: flex;
+  padding: 12px 8px 12px 20px;
+  margin-left: auto;
+  gap: 10px;
+  background-color: $btn-bg;
+  border: none;
+  border-radius: 150px;
+
+  font-size: 1em;
+  line-height: 15px;
+  color: $btn-text-color;
+
+  transition: $transition;
+  cursor: pointer;
+}
+
+.BtnRental:hover {
+  background-color: $btn-hover-bg;
+}
+
+.BtnSign {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  height: 100%;
+  padding: 0;
+  padding-left: 14px;
+
+  background-color: transparent;
+  color: $text-color;
+
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.SignIcon {
+  width: 18px;
+  height: 18px;
+}
+
+.Divider {
+  margin: 0 14px;
+  width: 1px;
+  height: 50%;
+  background-color: $text-color;
+}
+
+.BtnOpt {
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  height: 100%;
+  padding-right: 14px;
+
+  background-color: transparent;
+  color: $text-color;
+  text-transform: uppercase;
+
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.ArrowIcon {
+  font-size: 20px;
+}
