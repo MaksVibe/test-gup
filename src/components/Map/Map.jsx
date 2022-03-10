@@ -1,5 +1,6 @@
 import GoogleMapReact from "google-map-react";
 import { useState } from "react";
+const MAP_API_KEY = "AIzaSyB2iB0ZNjuigGI-HVW1yOx8PHJl-gDCdbE";
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
@@ -14,7 +15,7 @@ const Map = () => {
     <div style={{ height: "100vh", width: "80%" }}>
       <GoogleMapReact
         bootstrapURLKeys={{
-          key: "AIzaSyB2iB0ZNjuigGI-HVW1yOx8PHJl-gDCdbE",
+          key: MAP_API_KEY,
           language: "ua",
           region: "ua",
           libraries: ["places"],
